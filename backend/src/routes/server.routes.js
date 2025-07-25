@@ -6,6 +6,9 @@ const usuarios = require('../controllers/usuarios.controllers');
 
 router.get('/misitio/gastos', gastos.getGastos);
 router.post('/misitio/gastos', gastos.addGasto);
+router.put('/misitio/gastos/:id', gastos.updateGasto);
+router.delete('/misitio/gastos/:id', gastos.deleteGasto);
+
 
 router.get('/misitio/usuarios', usuarios.getUsuarios);
 router.post('/misitio/usuarios', usuarios.addUsuario);
